@@ -11,6 +11,14 @@ Using this plugin to build CKEditor 5 from source in Vite is still in the experi
 
 You should use this plugin when [building CKEditor 5 from source](https://ckeditor.com/docs/ckeditor5/latest/installation/advanced/alternative-setups/integrating-from-source.html) in a Vite application. It handles loading the `.svg` icons and styles from the packages and theme package. If your editor is already built (e.g you downloaded it from [CKEditor 5 Online Builder](https://ckeditor.com/ckeditor-5/online-builder/)) then this plugin is not needed.
 
+1. Install the package.
+```bash
+npm install -D @ckeditor/vite-plugin-ckeditor5
+# or
+yarn add -D @ckeditor/vite-plugin-ckeditor5
+```
+
+2. Import and use the plugin in Vite configuration.
 ```js
 // vite.config.js
 import { defineConfig } from 'vite';
