@@ -27,7 +27,11 @@
   "scripts": {
     "build": "unbuild",
     "postinstall": "node ./scripts/postinstall.cjs",
-    "lint": "eslint --quiet \"**/*.@(js|ts)\""
+    "lint": "eslint --quiet \"**/*.@(js|ts)\"",
+    "changelog": "node ./scripts/changelog.cjs",
+    "release:bump-version": "node ./scripts/bump-version.cjs",
+    "release:publish": "node ./scripts/publish.cjs",
+    "preversion": "npm run build"
   },
   "dependencies": {
     "postcss": "^8.4.12",
@@ -36,6 +40,8 @@
     "postcss-nesting": "^10.1.4"
   },
   "devDependencies": {
+    "@ckeditor/ckeditor5-dev-bump-year": "^32.0.0",
+    "@ckeditor/ckeditor5-dev-release-tools": "^32.0.0",
     "@types/node": "^18.11.17",
     "@types/postcss-import": "^14.0.0",
     "@types/postcss-mixins": "^9.0.0",
@@ -44,7 +50,8 @@
     "husky": "^8.0.2",
     "lint-staged": "^12.0.0",
     "unbuild": "^1.0.2",
-    "vite": "^4.0.0"
+    "vite": "^4.0.0",
+    "webpack": "^5.75.0"
   },
   "engines": {
     "node": "^14.18.0 || >= 16"

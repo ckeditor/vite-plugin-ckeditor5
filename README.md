@@ -45,6 +45,38 @@ const require = createRequire( import.meta.url );
 - This plugin will not emit any translation files and only english is currently supported.
 - When using the Export to Word or Export to PDF plugins the editor styles will not be automatically collected.
 
+## Releasing package
+
+### Changelog
+
+Before starting the release process, you need to generate the changelog:
+
+```bash
+npm run changelog
+```
+
+### Publishing
+
+After generating the changelog, you are able to release the package.
+
+First, you need to bump the version:
+
+```bash
+npm run release:bump-version
+```
+
+You can also use the `--dry-run` option in order to see what this task does.
+
+After bumping the version, you can publish the changes:
+
+```bash
+npm run release:publish
+```
+
+As in the previous task, the `--dry-run` option is also available.
+
+Note: Only the `dist/` directory will be published.
+
 ## License
 
 Licensed under the terms of [GNU General Public License Version 2 or later](http://www.gnu.org/licenses/gpl.html). For full details about the license, please check the `LICENSE.md` file.
