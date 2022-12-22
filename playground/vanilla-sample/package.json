@@ -1,5 +1,5 @@
 {
-  "name": "cke5-vite-vanilla",
+  "name": "@ckeditor/vite-plugin-ckeditor5-vanilla-sample",
   "version": "0.0.1",
   "scripts": {
     "dev": "vite",
