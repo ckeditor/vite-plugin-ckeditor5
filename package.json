@@ -1,0 +1,67 @@
+{
+  "name": "@ckeditor/vite-plugin-ckeditor5",
+  "version": "0.1.0",
+  "type": "module",
+  "author": "CKSource (http://cksource.com/)",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/ckeditor/vite-plugin-ckeditor5",
+  "bugs": "https://github.com/ckeditor/vite-plugin-ckeditor5/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ckeditor/vite-plugin-ckeditor5.git"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "scripts/postinstall.cjs"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "postinstall": "node ./scripts/postinstall.cjs",
+    "lint": "eslint --quiet \"**/*.@(cjs|js|ts)\"",
+    "changelog": "node ./scripts/changelog.cjs",
+    "release:bump-version": "node ./scripts/bump-version.cjs",
+    "release:publish": "node ./scripts/publish.cjs",
+    "preversion": "npm run build"
+  },
+  "dependencies": {
+    "postcss": "^8.4.12",
+    "postcss-import": "^14.1.0",
+    "postcss-mixins": "^9.0.2",
+    "postcss-nesting": "^10.1.4"
+  },
+  "devDependencies": {
+    "@ckeditor/ckeditor5-dev-bump-year": "^32.0.0",
+    "@ckeditor/ckeditor5-dev-release-tools": "^32.0.0",
+    "@types/node": "^18.11.17",
+    "@types/postcss-import": "^14.0.0",
+    "@types/postcss-mixins": "^9.0.0",
+    "eslint": "^7.19.0",
+    "eslint-config-ckeditor5": "^4.1.1",
+    "husky": "^8.0.2",
+    "lint-staged": "^12.0.0",
+    "unbuild": "^1.0.2",
+    "vite": "^4.0.0",
+    "webpack": "^5.75.0"
+  },
+  "engines": {
+    "node": "^14.18.0 || >= 16"
+  },
+  "lint-staged": {
+    "**/*.{js,ts}": [
+      "eslint --quiet"
+    ]
+  },
+  "eslintIgnore": [
+    "dist/**"
+  ]
+}
