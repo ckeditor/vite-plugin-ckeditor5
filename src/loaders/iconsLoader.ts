@@ -18,8 +18,8 @@ const iconsLoader = (): Plugin => {
 			if ( !isCKEditor5Icon( id ) ) {
 				return;
 			}
-			const code = fs.readFileSync( id, 'utf8' );
-			return code;
+
+			return fs.readFileSync( id, 'utf8' );
 		},
 
 		transform: ( code, id ) => {

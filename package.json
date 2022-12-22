@@ -5,7 +5,7 @@
   "author": "CKSource (http://cksource.com/)",
   "license": "GPL-2.0-or-later",
   "homepage": "https://github.com/ckeditor/vite-plugin-ckeditor5",
-  "bugs": "https://github.com/ckeditor/ckeditor5/issues",
+  "bugs": "https://github.com/ckeditor/vite-plugin-ckeditor5/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/ckeditor/vite-plugin-ckeditor5.git"
@@ -21,8 +21,7 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist",
-    "CHANGELOG.md"
+    "dist"
   ],
   "scripts": {
     "build": "unbuild"

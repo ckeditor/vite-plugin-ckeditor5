@@ -1,5 +1,5 @@
 CKEditor 5 Vite plugin
-============================
+======================
 
 Integrate the [CKEditor 5](https://ckeditor.com)'s build process in your [Vite](https://vitejs.dev/) setup.
 
@@ -29,13 +29,13 @@ export default defineConfig( {
 
 This should be an absolute path to the main file in theme package. Example:
 
-```
+```js
 { theme: require.resolve( '@ckeditor/ckeditor5-theme-lark' ) }
 ```
 
 Note: If you are using this plugin in an ESM project you may encounter an error stating that `require.resolve` is not a function. In this case you can add the following to the top of your `vite.config.js` file:
 
-```
+```js
 import { createRequire } from 'node:module';
 const require = createRequire( import.meta.url );
 ```

@@ -1,15 +1,15 @@
 {
-	"compilerOptions": {
-	  "noImplicitAny": true,
-	  "noImplicitOverride": true,
-	  "strict": true,
-	  "module": "es6",
-	  "target": "es2020",
-	  "sourceMap": true,
-	  "moduleResolution": "node",
-	  "allowSyntheticDefaultImports": true
-	},
-	"include": [
-		"./src/**/*"
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "strict": true,
+    "module": "es6",
+    "target": "es2020",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "./src/**/*"
   ]
- }
+}
