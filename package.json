@@ -32,7 +32,7 @@
     "changelog": "node ./scripts/changelog.cjs",
     "release:bump-version": "node ./scripts/bump-version.cjs",
     "release:publish": "node ./scripts/publish.cjs",
-    "preversion": "npm run build"
+    "preversion": "yarn run build"
   },
   "dependencies": {
     "postcss": "^8.4.12",
