@@ -1,0 +1,46 @@
+{
+  "name": "@ckeditor/vite-plugin-ckeditor5-vue-sample",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-alignment": "^35.4.0",
+    "@ckeditor/ckeditor5-autoformat": "^35.4.0",
+    "@ckeditor/ckeditor5-basic-styles": "^35.4.0",
+    "@ckeditor/ckeditor5-block-quote": "^35.4.0",
+    "@ckeditor/ckeditor5-ckbox": "^35.4.0",
+    "@ckeditor/ckeditor5-cloud-services": "^35.4.0",
+    "@ckeditor/ckeditor5-comments": "^35.4.0",
+    "@ckeditor/ckeditor5-editor-classic": "^35.4.0",
+    "@ckeditor/ckeditor5-essentials": "^35.4.0",
+    "@ckeditor/ckeditor5-font": "^35.4.0",
+    "@ckeditor/ckeditor5-heading": "^35.4.0",
+    "@ckeditor/ckeditor5-highlight": "^35.4.0",
+    "@ckeditor/ckeditor5-image": "^35.4.0",
+    "@ckeditor/ckeditor5-link": "^35.4.0",
+    "@ckeditor/ckeditor5-list": "^35.4.0",
+    "@ckeditor/ckeditor5-media-embed": "^35.4.0",
+    "@ckeditor/ckeditor5-paragraph": "^35.4.0",
+    "@ckeditor/ckeditor5-paste-from-office": "^35.4.0",
+    "@ckeditor/ckeditor5-real-time-collaboration": "^35.4.0",
+    "@ckeditor/ckeditor5-remove-format": "^35.4.0",
+    "@ckeditor/ckeditor5-table": "^35.4.0",
+    "@ckeditor/ckeditor5-theme-lark": "^35.4.0",
+    "@ckeditor/ckeditor5-track-changes": "^35.4.0",
+    "@ckeditor/ckeditor5-vue": "^4.0.1",
+    "ckbox": "^1.1.0",
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "vite": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=5.7.1"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "cke5-vite-vanilla",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-basic-styles": "^35.4.0",
+    "@ckeditor/ckeditor5-editor-classic": "^35.4.0",
+    "@ckeditor/ckeditor5-essentials": "^35.4.0",
+    "@ckeditor/ckeditor5-list": "^35.4.0",
+    "@ckeditor/ckeditor5-paragraph": "^35.4.0",
+    "@ckeditor/ckeditor5-theme-lark": "^35.4.0"
+  }
+}

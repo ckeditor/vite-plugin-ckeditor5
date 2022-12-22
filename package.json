@@ -65,6 +65,7 @@
     ]
   },
   "eslintIgnore": [
-    "dist/**"
+    "dist/**",
+    "playground/**/dist"
   ]
 }
