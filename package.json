@@ -26,6 +26,7 @@
     "CHANGELOG.md"
   ],
   "scripts": {
+    "dev": "nodemon --exec 'yarn build' -e js,ts --ignore dist",
     "build": "unbuild",
     "postinstall": "node ./scripts/postinstall.cjs",
     "lint": "eslint --quiet \"**/*.@(cjs|js|ts)\"",
@@ -50,6 +51,7 @@
     "eslint-config-ckeditor5": "^4.1.1",
     "husky": "^8.0.2",
     "lint-staged": "^12.0.0",
+    "nodemon": "^2.0.20",
     "unbuild": "^1.0.2",
     "vite": "^4.0.0",
     "webpack": "^5.75.0"
