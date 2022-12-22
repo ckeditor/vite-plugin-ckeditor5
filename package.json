@@ -27,7 +27,7 @@
   "scripts": {
     "build": "unbuild",
     "postinstall": "node ./scripts/postinstall.cjs",
-    "lint": "eslint --quiet \"**/*.@(js|ts)\"",
+    "lint": "eslint --quiet \"**/*.@(cjs|js|ts)\"",
     "changelog": "node ./scripts/changelog.cjs",
     "release:bump-version": "node ./scripts/bump-version.cjs",
     "release:publish": "node ./scripts/publish.cjs",
