@@ -1,6 +1,9 @@
 node_modules
 yarn.lock
+yarn-error.log
 
 dist
+.nuxt
+.output
 
 .DS_Store

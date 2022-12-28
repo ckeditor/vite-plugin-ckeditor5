@@ -5,6 +5,8 @@
 
 import { defineConfig } from 'vite';
 
+// Note: If this sample is used outside of this repo then import from installed package:
+// import ckeditor5 from "@ckeditor/vite-plugin-ckeditor5";
 import ckeditor5 from '../../dist/index.mjs';
 
 export default defineConfig( {

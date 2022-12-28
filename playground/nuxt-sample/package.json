@@ -1,0 +1,22 @@
+{
+  "name": "@ckeditor/vite-plugin-ckeditor5-nuxt-sample",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-vue": "^4.0.0",
+	  "@ckeditor/ckeditor5-basic-styles": "^35.4.0",
+    "@ckeditor/ckeditor5-editor-classic": "^35.4.0",
+    "@ckeditor/ckeditor5-essentials": "^35.4.0",
+    "@ckeditor/ckeditor5-paragraph": "^35.4.0",
+    "@ckeditor/ckeditor5-theme-lark": "^35.4.0"
+  },
+  "devDependencies": {
+    "nuxt": "3.0.0",
+    "@ckeditor/vite-plugin-ckeditor5": "^0.1.0"
+  }
+}

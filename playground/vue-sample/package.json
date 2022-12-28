@@ -1,7 +1,6 @@
 {
   "name": "@ckeditor/vite-plugin-ckeditor5-vue-sample",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.1",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -36,11 +35,8 @@
     "vue": "^3.2.37"
   },
   "devDependencies": {
+    "@ckeditor/vite-plugin-ckeditor5": "^0.1.0",
     "@vitejs/plugin-vue": "^4.0.0",
     "vite": "^4.0.0"
-  },
-  "engines": {
-    "node": ">=14.0.0",
-    "npm": ">=5.7.1"
   }
 }
