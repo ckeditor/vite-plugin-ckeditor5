@@ -71,7 +71,9 @@ function getThemeFilePath( inputFilePath: string, theme: CKEditor5PluginOptions[
 		return;
 	}
 
-	const inputFileName = inputFilePath.split( path.join( packageName, 'theme', path.sep ) )[ 1 ];
+	const inputFileName = inputFilePath.split(
+		path.join( packageName, 'theme', path.sep ).replace( /\\/g, '/' )
+	)[ 1 ];
 
 	if ( !inputFileName ) {
 		return;
