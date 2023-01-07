@@ -9,6 +9,8 @@ import * as util from 'node:util';
 const readFile = util.promisify( fs.readFile );
 
 import type { Plugin } from 'vite';
+// eslint-disable-next-line no-duplicate-imports
+import { normalizePath } from 'vite';
 import type { CKEditor5PluginOptions } from '../index';
 import postcss, { type AcceptedPlugin } from 'postcss';
 import postcssNesting from 'postcss-nesting';
@@ -72,7 +74,7 @@ function getThemeFilePath( inputFilePath: string, theme: CKEditor5PluginOptions[
 	}
 
 	const inputFileName = inputFilePath.split(
-		path.join( packageName, 'theme', path.sep ).replace( /\\/g, '/' )
+		normalizePath( path.join( packageName, 'theme', path.sep ) )
 	)[ 1 ];
 
 	if ( !inputFileName ) {
