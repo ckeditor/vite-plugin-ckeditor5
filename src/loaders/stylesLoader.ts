@@ -8,9 +8,7 @@ import * as path from 'node:path';
 import * as util from 'node:util';
 const readFile = util.promisify( fs.readFile );
 
-import type { Plugin } from 'vite';
-// eslint-disable-next-line no-duplicate-imports
-import { normalizePath } from 'vite';
+import { normalizePath, type Plugin } from 'vite';
 import type { CKEditor5PluginOptions } from '../index';
 import postcss, { type AcceptedPlugin } from 'postcss';
 import postcssNesting from 'postcss-nesting';
