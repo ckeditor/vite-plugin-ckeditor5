@@ -42,8 +42,8 @@
     "postcss-nesting": "^10.1.4"
   },
   "devDependencies": {
-    "@ckeditor/ckeditor5-dev-bump-year": "^32.0.0",
-    "@ckeditor/ckeditor5-dev-release-tools": "^32.0.0",
+    "@ckeditor/ckeditor5-dev-bump-year": "^33.0.0",
+    "@ckeditor/ckeditor5-dev-release-tools": "^33.0.0",
     "@types/node": "^18.11.17",
     "@types/postcss-import": "^14.0.0",
     "@types/postcss-mixins": "^9.0.0",
@@ -53,8 +53,7 @@
     "lint-staged": "^12.0.0",
     "nodemon": "^2.0.20",
     "unbuild": "^1.0.2",
-    "vite": "^4.0.0",
-    "webpack": "^5.75.0"
+    "vite": "^4.0.0"
   },
   "engines": {
     "node": "^14.18.0 || >= 16"
