@@ -12,7 +12,8 @@ import ckeditor5 from '../../dist/index.mjs';
 export default defineConfig( {
 	root: './src',
 	build: {
-		outDir: '../dist'
+		outDir: '../dist',
+		sourcemap: true
 	},
 	esbuild: {
 		sourcemap: true

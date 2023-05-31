@@ -34,7 +34,7 @@ const stylesLoader = ( theme: CKEditor5PluginOptions['theme'] ): Plugin => {
 			}
 
 			const themeStyles = await loadThemeStyles( id, theme );
-			const stylesToLoad = code + themeStyles;
+			const stylesToLoad = code + themeStyles.code;
 
 			return loadPostcssFile( stylesToLoad, id );
 		}
@@ -48,18 +48,20 @@ async function loadThemeStyles( id: string, theme: string ) {
 
 	if ( themeFilePath && fs.existsSync( themeFilePath ) ) {
 		const css = await readFile( themeFilePath );
-		const result = await postcss( postcssOptions ).process( css, { from: themeFilePath } );
-		return result.css.toString();
+		const result = await postcss( postcssOptions ).process( css, { from: themeFilePath, map: { absolute: true, inline: false } } );
+
+		return { code: result.css.toString(), map: result.map.toString() };
 	}
 
-	return '';
+	return { code: '' };
 }
 
 async function loadPostcssFile( code: string, id: string ) {
-	const result = await postcss( postcssOptions ).process( code, { from: id } );
+	const result = await postcss( postcssOptions ).process( code, { from: id, map: { absolute: true, inline: false } } );
 
 	return {
-		code: result.css.toString()
+		code: result.css.toString(),
+		map: result.map.toString()
 	};
 }
 
