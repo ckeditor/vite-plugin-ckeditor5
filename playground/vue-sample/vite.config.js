@@ -15,5 +15,8 @@ export default defineConfig( {
 	plugins: [
 		vue(),
 		ckeditor5( { theme: require.resolve( '@ckeditor/ckeditor5-theme-lark' ) } )
-	]
+	],
+	build: {
+		sourcemap: true
+	}
 } );
