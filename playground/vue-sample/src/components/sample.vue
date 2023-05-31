@@ -41,7 +41,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import SampleFooter from './sample-footer.vue';
 import SampleHeader from './sample-header.vue';
 

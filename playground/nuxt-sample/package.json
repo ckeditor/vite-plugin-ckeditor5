@@ -9,14 +9,14 @@
   },
   "dependencies": {
     "@ckeditor/ckeditor5-vue": "^4.0.0",
-	  "@ckeditor/ckeditor5-basic-styles": "^36.0.0",
-    "@ckeditor/ckeditor5-editor-classic": "^36.0.0",
-    "@ckeditor/ckeditor5-essentials": "^36.0.0",
-    "@ckeditor/ckeditor5-paragraph": "^36.0.0",
-    "@ckeditor/ckeditor5-theme-lark": "^36.0.0"
+	  "@ckeditor/ckeditor5-basic-styles": "^38.0.1",
+    "@ckeditor/ckeditor5-editor-classic": "^38.0.1",
+    "@ckeditor/ckeditor5-essentials": "^38.0.1",
+    "@ckeditor/ckeditor5-paragraph": "^38.0.1",
+    "@ckeditor/ckeditor5-theme-lark": "^38.0.1"
   },
   "devDependencies": {
-    "nuxt": "3.0.0",
+    "nuxt": "3.5.2",
     "@ckeditor/vite-plugin-ckeditor5": "^0.1.0"
   }
 }
