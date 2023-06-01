@@ -1,6 +1,14 @@
 Changelog
 =========
 
+## [0.1.2](https://github.com/ckeditor/vite-plugin-ckeditor5/compare/v0.1.1...v0.1.2) (2023-06-01)
+
+### Bug fixes
+
+* Using external plugins with different name conventions than official CKEditor 5 plugins no longer results in editor crash. Closes: [#10](https://github.com/ckeditor/vite-plugin-ckeditor5/issues/10). ([commit](https://github.com/ckeditor/vite-plugin-ckeditor5/commit/bde6558577801a0d180d31c7dc31344c6ffabdc7))
+* Using sourcemap option in Vite no longer results in warnings. Closes: [#8](https://github.com/ckeditor/vite-plugin-ckeditor5/issues/8). ([commit](https://github.com/ckeditor/vite-plugin-ckeditor5/commit/a18e701f355ede3cfe584599ba823064bd62ba51))
+
+
 ## [0.1.1](https://github.com/ckeditor/vite-plugin-ckeditor5/compare/v0.1.0...v0.1.1) (2023-01-16)
 
 ### Bug fixes
