@@ -42,8 +42,8 @@
     "postcss-nesting": "^10.1.4"
   },
   "devDependencies": {
-    "@ckeditor/ckeditor5-dev-bump-year": "^33.0.0",
-    "@ckeditor/ckeditor5-dev-release-tools": "^33.0.0",
+    "@ckeditor/ckeditor5-dev-bump-year": "^37.0.0",
+    "@ckeditor/ckeditor5-dev-release-tools": "^37.0.0",
     "@types/node": "^18.11.17",
     "@types/postcss-import": "^14.0.0",
     "@types/postcss-mixins": "^9.0.0",
