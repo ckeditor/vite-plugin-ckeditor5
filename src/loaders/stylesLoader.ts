@@ -48,20 +48,19 @@ async function loadThemeStyles( id: string, theme: string ) {
 
 	if ( themeFilePath && fs.existsSync( themeFilePath ) ) {
 		const css = await readFile( themeFilePath );
-		const result = await postcss( postcssOptions ).process( css, { from: themeFilePath, map: { absolute: true, inline: false } } );
+		const result = await postcss( postcssOptions ).process( css, { from: themeFilePath, map: { absolute: true, inline: true } } );
 
-		return { code: result.css.toString(), map: result.map.toString() };
+		return { code: result.css.toString() };
 	}
 
 	return { code: '' };
 }
 
 async function loadPostcssFile( code: string, id: string ) {
-	const result = await postcss( postcssOptions ).process( code, { from: id, map: { absolute: true, inline: false } } );
+	const result = await postcss( postcssOptions ).process( code, { from: id, map: { absolute: true, inline: true } } );
 
 	return {
-		code: result.css.toString(),
-		map: result.map.toString()
+		code: result.css.toString()
 	};
 }
 
