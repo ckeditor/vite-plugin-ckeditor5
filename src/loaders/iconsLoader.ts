@@ -7,7 +7,7 @@ import type { Plugin } from 'vite';
 
 import * as fs from 'node:fs';
 
-const isCKEditor5Icon = ( id: string ) => id.endsWith( '.svg' ) && id.includes( 'ckeditor5-' );
+const isCKEditor5Icon = ( id: string ) => id.endsWith( '.svg' ) && ( id.includes( 'ckeditor5-' ) || id.includes( '-ckeditor5' ) );
 
 const iconsLoader = (): Plugin => {
 	return {
