@@ -3,37 +3,41 @@ CKEditor 5 Vite plugin
 
 Integrate the [CKEditor 5](https://ckeditor.com)'s build process in your [Vite](https://vitejs.dev/) setup.
 
+You should use this plugin when [building CKEditor 5 from source](https://ckeditor.com/docs/ckeditor5/latest/installation/advanced/alternative-setups/integrating-from-source.html) in a Vite application. It handles loading the `.svg` icons and styles from the packages and theme package. If your editor is already built (e.g you downloaded it from [CKEditor 5 Online Builder](https://ckeditor.com/ckeditor-5/online-builder/)) then this plugin is not needed.
+
 ## ⚠️ Experimental feature
 
 Using this plugin to build CKEditor 5 from source in Vite is still in the experimental phase. We encourage you to test it and give us feedback. However, there might be some issues in more complex application/usecases, thus using this solution in production applications is not yet recommended.
 
-## Usage
+## 📜 Documentation
 
-You should use this plugin when [building CKEditor 5 from source](https://ckeditor.com/docs/ckeditor5/latest/installation/advanced/alternative-setups/integrating-from-source.html) in a Vite application. It handles loading the `.svg` icons and styles from the packages and theme package. If your editor is already built (e.g you downloaded it from [CKEditor 5 Online Builder](https://ckeditor.com/ckeditor-5/online-builder/)) then this plugin is not needed.
+For an indepth documentation see the official [Integrating CKEditor 5 from source using Vite](https://ckeditor.com/docs/ckeditor5/latest/installation/advanced/alternative-setups/integrating-from-source-vite.html) guide.
+
+### Quick start
 
 1. Install the package.
-```bash
-npm install -D @ckeditor/vite-plugin-ckeditor5
-# or
-yarn add -D @ckeditor/vite-plugin-ckeditor5
-```
+	```bash
+	npm install -D @ckeditor/vite-plugin-ckeditor5
+	# or
+	yarn add -D @ckeditor/vite-plugin-ckeditor5
+	```
 
 2. Import and use the plugin in Vite configuration.
-```js
-// vite.config.js
-import { defineConfig } from 'vite';
-import ckeditor5 from '@ckeditor/vite-plugin-ckeditor5';
+	```js
+	// vite.config.js
+	import { defineConfig } from 'vite';
+	import ckeditor5 from '@ckeditor/vite-plugin-ckeditor5';
 
-export default defineConfig( {
-	plugins: [
-		ckeditor5( { theme: require.resolve( '@ckeditor/ckeditor5-theme-lark' ) } )
-	]
-} );
-```
+	export default defineConfig( {
+		plugins: [
+			ckeditor5( { theme: require.resolve( '@ckeditor/ckeditor5-theme-lark' ) } )
+		]
+	} );
+	```
 
-### Options:
+#### Options:
 
-#### `theme`
+##### `theme`
 
 This should be an absolute path to the main file in theme package. Example:
 
