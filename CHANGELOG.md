@@ -1,6 +1,13 @@
 Changelog
 =========
 
+## [0.1.3](https://github.com/ckeditor/vite-plugin-ckeditor5/compare/v0.1.2...v0.1.3) (2023-06-02)
+
+### Bug fixes
+
+* Fixed issue with CSS source maps processing that could result in warnings in development mode. Closes: [#12](https://github.com/ckeditor/vite-plugin-ckeditor5/issues/12). ([commit](https://github.com/ckeditor/vite-plugin-ckeditor5/commit/aa70afbd83b0c1211119087f7cd568c35a2e8280))
+
+
 ## [0.1.2](https://github.com/ckeditor/vite-plugin-ckeditor5/compare/v0.1.1...v0.1.2) (2023-06-01)
 
 ### Bug fixes
