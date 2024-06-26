@@ -3,13 +3,15 @@ CKEditor 5 Vite plugin
 
 Integrate the [CKEditor 5](https://ckeditor.com)'s build process in your [Vite](https://vitejs.dev/) setup.
 
-## ⚠️ Experimental feature
+## 🚨 Deprecated package
 
-Using this plugin to build CKEditor 5 from source in Vite is still in the experimental phase. We encourage you to test it and give us feedback. However, there might be some issues in more complex application/usecases, thus using this solution in production applications is not yet recommended.
+The Vite plugin is deprecated, and new versions will not be released. CKEditor 5 version 42.0.0 works with Vite without any special setup. For more information, read the migration guide: https://ckeditor.com/docs/ckeditor5/latest/updating/nim-migration/customized-builds.html
 
 ## Usage
 
-You should use this plugin when [building CKEditor 5 from source](https://ckeditor.com/docs/ckeditor5/latest/installation/advanced/alternative-setups/integrating-from-source.html) in a Vite application. It handles loading the `.svg` icons and styles from the packages and theme package. If your editor is already built (e.g you downloaded it from [CKEditor 5 Online Builder](https://ckeditor.com/ckeditor-5/online-builder/)) then this plugin is not needed.
+If you are integrating CKEditor 5 with version 42.0.0 or higher or your editor is already built then this plugin is not needed.
+
+You can use this plugin when [building CKEditor 5 in legacy way from source](https://ckeditor.com/docs/ckeditor5/latest/installation/advanced/alternative-setups/integrating-from-source.html) in a Vite application. It handles loading the `.svg` icons and styles from the packages and theme package. 
 
 1. Install the package.
 ```bash
